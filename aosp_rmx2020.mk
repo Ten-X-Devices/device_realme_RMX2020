@@ -22,15 +22,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/rmx2020/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_rmx2020
+PRODUCT_NAME := aosp_rmx2020
 PRODUCT_DEVICE := rmx2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme G70 Series
 PRODUCT_MANUFACTURER := realme
-
+CUSTOM_BUILD_TYPE=Official
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Build info
